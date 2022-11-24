@@ -7,7 +7,7 @@ Objetivos:
 - Recursividade em Prolog
 - Listas em Prolog
 
-## 1. Recursividade
+### 1. Recursividade
 
 1. Implemente o predicado `fatorial(+N, ?F)`, que calcula o fatorial de um número $N$.
 2. Implemente o predicado `somaRec(+N, ?Sum)`, uma versão recursiva do cálculo do somatório dos números de 1 até $N$.
@@ -23,19 +23,19 @@ Fatorial, somatório, série de Fibonacci e primalidade de alguns valores:
 | Fibonacci |   0   |   1   |   1   |   2   |   3   |   5   |   8   |
 | Primo     |  no   |  yes  |  yes  |  yes  |  no   |  yes  |  no   |
 
-## 2. Relações Familiares
+### 2. Relações Familiares
 
 Considere a base de factos do exercício 1 da ficha da aula anterior sobre relações familiares.
 
 1. Implemente o predicado `ancestor(?X, ?Y)` que sucede se X é um antepassado de Y.
 2. Implemente o predicado `descendant(?X, ?Y)` que sucede se X é descendente de Y.
 
-## 3. Cargos e Chefes
+### 3. Cargos e Chefes
 
 Considere a base de factos do exercício 5 da ficha da aula anterior sobre cargos e chefes.
 Implemente o predicado `superior(+X,+Y)` que sucede se a pessoa X ocupa um cargo superior ao cargo ocupado pela pessoa Y.
 
-## 4. Funcionamento de Listas
+### 4. Funcionamento de Listas
 
 Sem usar o interpretador, indique o resultado de cada uma das seguintes igualdades em Prolog:
 
@@ -52,7 +52,7 @@ Sem usar o interpretador, indique o resultado de cada uma das seguintes igualdad
 11. `| ?- [One, Two | Tail] = [1, 2, 3, 4]`
 12. `| ?- [One, Two | Tail] = [leic | Rest]`
 
-## 5. Recursividade sobre listas
+### 5. Recursividade sobre listas
 
 1. Implemente o predicado `list_size(+List, ?Size)` que determina o tamanho de List.
 2. Implemente o predicado `list_sum(+List, ?Sum)` que soma os valores contidos em List.
@@ -60,7 +60,7 @@ Sem usar o interpretador, indique o resultado de cada uma das seguintes igualdad
 4. Implemente o predicado `inner_product(+List1, +List2, ?Result)` que calcula o produto interno de dois vetores (representados como listas de inteiros, do mesmo tamanho).
 5. Implemente o predicado `count(+Elem, +List, ?N)`, que conta o número de ocorrências de Elem em List, colocando o resultado em N.
 
-## 6. Manipulação de Listas
+### 6. Manipulação de Listas
 
 1. Implemente o predicado `invert(+List1, ?List2)`, que inverte a lista List.
 2. Implemente opredicado `del_one(+Elem, +List1, ?List2)`,que apaga uma ocorrência de Elem de List1, resultando em List.
@@ -78,7 +78,7 @@ Sem usar o interpretador, indique o resultado de cada uma das seguintes igualdad
 11. Implemente o predicado `replace(+List1, +Index, ?Old, +New, ?List2)`, que substitui o
 elemento Old, localizado no índice Index de List1, por New, resultando em List2.
 
-## 7. Append, O Poderoso
+### 7. Append, O Poderoso
 
 1. Implemente o predicado `list_append(?L1, ?L2, ?L3)` em que L3 é constituída pela concatenação das listas L1 e L2.
 2. Implemente o predicado `list_member(?Elem, ?List)` que verifica se Elem é membro de List usando unicamente o predicado `append` uma só vez.
@@ -97,7 +97,7 @@ elemento Old, localizado no índice Index de List1, por New, resultando em List2
     L = [c, d, e, f, a, b]
     ```
 
-## 8. Listas de Números
+### 8. Listas de Números
 
 1. Implemente o predicado `list_to(+N, ?List)`, que unifica List com uma lista com todos os números inteiros entre 1 e N.
 2. Implemente o predicado `list_from_to(+Inf, +Sup, ?List)`, que unifica List com uma lista com todos os inteiros entre Inf e Sup (ambos incluídos).
@@ -106,7 +106,7 @@ elemento Old, localizado no índice Index de List1, por New, resultando em List2
 5. Implemente o predicado `primes(+N, ?List)`, que unifica List com uma lista contendo todos os números primos até N (sugestão: use o predicado `isPrime`, do exercício 1).
 6. Implemente o predicado `fibs(+N, ?List)`, que unifica List com uma lista com todos os números de Fibonacci de ordem 0 até N (sugestão: use o predicado do exercício 1).
 
-## 9. Run-Length Encoding
+### 9. Run-Length Encoding
 
 1. Implemente o predicado `rle(+List1, ?List2)`, que faça a compressão *run-length* de List colocando o resultado em List2 usando pares de valores.
 2. Implemente o predicado `un_rle(+List1, ?List2)`, que faça a descompressão de List.
@@ -118,13 +118,13 @@ elemento Old, localizado no índice Index de List1, por New, resultando em List2
     L = [a, a, b, b, b, c, c, c, d, d, e, f, f, f, g, g, g, g, g, g, g]
     ```
 
-## 10. Ordenação de Listas
+### 10. Ordenação de Listas
 
 1. Implemente o predicado `is_ordered(+List)` que sucede se List é uma lista de inteiros ordenados de forma ascendente.
 2. Implemente o predicado `insert_ordered(+Value, +List1, ?List2)`, que insere Value em List1, mantendo a ordenação dos elementos, colocando o resultado em List.
 3. Implemente o predicado `insert_sort(+List, ?OrderedList)`, que ordena List.
 
-## 11. Triângulo de Pascal
+### 11. Triângulo de Pascal
 
 Implemente o predicado `pascal(+N, ?Lines)`, em que Lines é uma lista com as primeiras N linhas do triângulo de Pascal.
 
