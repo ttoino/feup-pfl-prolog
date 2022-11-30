@@ -1,3 +1,4 @@
+% a)
 leciona(algoritmos, adalberto).
 leciona(basesDeDados, bernardete).
 leciona(compiladores, capitolino).
@@ -34,6 +35,15 @@ frequenta(redes, claudio).
 frequenta(redes, diana).
 frequenta(redes, eduardo).
 
+% b)
+% | ?- leciona(UC, diogenes).
+% | ?- leciona(_UC, felismina).
+% | ?- frequenta(UC, claudio).
+% | ?- frequenta(_UC, dalmindo).
+% | ?- leciona(_UC, bernardete), frequenta(_UC, eduarda).
+% | ?- frquenta(_UC, alberto), frequenta(_UC, alvaro).
+
+% c)
 aluno(X, Y) :- leciona(UC, X), frequenta(UC, Y).
 professor(X, Y) :- aluno(Y, X).
 colegas(X, Y) :- frequenta(UC, X), frequenta(UC, Y), X \= Y;

@@ -1,3 +1,4 @@
+% a)
 % gender
 female(grace).
 female(dede).
@@ -58,6 +59,18 @@ parent(haley, george).
 parent(dylan, poppy).
 parent(haley, poppy).
 
+% b)
+% | ?- female(haley).
+% | ?- male(gil).
+% | ?- parent(frank, phil).
+% | ?- parent(P, claire).
+% | ?- parent(gloria, C).
+% | ?- parent(jay, _P), parent(_P, GC).
+% | ?- parent(_P, lily), parent(GP, _P).
+% | ?- parent(alex, _C).
+% | ?- parent(jay, C), \+parent(gloria, C).
+
+% c)
 % rules
 father(X, Y) :- male(X), parent(X, Y).
 mother(X, Y) :- female(X), parent(X, Y).
@@ -70,3 +83,16 @@ neutralUncle(X, Y) :- siblings(X, P), parent(P, Y).
 uncle(X, Y) :- male(X), neutralUncle(X, Y).
 aunt(X, Y) :- female(X), neutralUncle(X, Y).
 cousins(X, Y) :- parent(P, X), neutralUncle(P, Y), X \= Y.
+
+% d)
+% | ?- cousins(haley, lily).
+% | ?- father(F, luke).
+% | ?- uncle(U, lily).
+% | ?- grandmother(GM, _GC).
+% | ?- siblings(S1, S2).
+% | ?- halfSiblings(HS1, HS2).
+
+% e)
+wedding(jay, gloria, '2008').
+wedding(jay, dede, '1968').
+divorce(jay, dede, '2003').

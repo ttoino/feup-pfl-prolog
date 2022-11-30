@@ -1,3 +1,4 @@
+% a)
 piloto(lamb).
 piloto(besenyei).
 piloto(chambliss).
@@ -35,3 +36,11 @@ gates(budapest, 6).
 gates(porto, 5).
 
 venceu(X, Y) :- venceu(Z, Y), equipa(Z, X).
+
+% b)
+% | ?- venceu(P, porto), piloto(P).
+% | ?- venceu(E, porto), \+piloto(E).
+% | ?- gates(C, _G), _G > 8.
+% | ?- aviao(P, _A), _A =\= edge540.
+% | ?- venceu(P, _C1), venceu(P, _C2), _C1 =\= _C2, piloto(P).
+% | ?- aviao(_P, A), venceu(_P, porto).
