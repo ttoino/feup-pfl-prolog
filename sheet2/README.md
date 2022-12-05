@@ -21,7 +21,7 @@ Fatorial, somatório, série de Fibonacci e primalidade de alguns valores:
 | Fatorial  |   0   |   1   |   2   |   6   |  24   |  120  |  720  |
 | Somatório |   0   |   1   |   3   |   6   |  10   |  15   |  21   |
 | Fibonacci |   0   |   1   |   1   |   2   |   3   |   5   |   8   |
-| Primo     |  no   |  yes  |  yes  |  yes  |  no   |  yes  |  no   |
+| Primo     |  no   |  no   |  yes  |  yes  |  no   |  yes  |  no   |
 
 ### 2. Relações Familiares
 
@@ -63,7 +63,7 @@ Sem usar o interpretador, indique o resultado de cada uma das seguintes igualdad
 ### 6. Manipulação de Listas
 
 1. Implemente o predicado `invert(+List1, ?List2)`, que inverte a lista List.
-2. Implemente opredicado `del_one(+Elem, +List1, ?List2)`,que apaga uma ocorrência de Elem de List1, resultando em List.
+2. Implemente o predicado `del_one(+Elem, +List1, ?List2)`, que apaga uma ocorrência de Elem de List1, resultando em List.
 3. Implemente o predicado `del_all(+Elem, +List1, ?List2)`, que apaga todas as ocorrências de Elem de List1, resultando em List2.
 4. Implemente o predicado `del_all_list(+ListElems, +List1, ?List2)`, que apaga de List1 todas as ocorrências de todos os elementos de ListElems, resultando em List2.
 5. Implemente o predicado `del_dups(+List1, ?List2)`, que elimina valores repetidos de List1.
@@ -93,7 +93,7 @@ elemento Old, localizado no índice Index de List1, por New, resultando em List2
 11. Implemente o predicado `list_shift_rotate(+List1, +N, ?List2)`, que rode List1 N elementos para a esquerda, resultando em List2, usando apenas os predicados `append` e `length`.
 
     ```prolog
-    | ?- list_shift_rotate([a, b, c, d, e, f], 2, L).`
+    | ?- list_shift_rotate([a, b, c, d, e, f], 2, L).
     L = [c, d, e, f, a, b]
     ```
 

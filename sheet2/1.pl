@@ -24,3 +24,14 @@ fibonacci(N, F) :-
     fibonacci(N1, F1),
     fibonacci(N2, F2),
     F is F1 + F2.
+
+% d)
+isPrimeHelper(X, X) :- !.
+isPrimeHelper(X, Y) :-
+    X > Y,
+    Y > 1,
+    (X mod Y) =\= 0,
+    Y1 is Y + 1,
+    isPrimeHelper(X, Y1).
+
+isPrime(X) :- isPrimeHelper(X, 2).
