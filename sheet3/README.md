@@ -34,13 +34,13 @@ data(two).
 data(three).
 
 cut_test_a(X):- data(X).
-cut_test_a(‘five’).
+cut_test_a('five').
 
 cut_test_b(X):- data(X), !.
-cut_test_b(‘five’).
+cut_test_b('five').
 
 cut_test_c(X, Y):- data(X), !, data(Y).
-cut_test_c(‘five’, ‘five’).
+cut_test_c('five', 'five').
 ```
 
 Sem usar o interpretador, indique o resultado de cada uma das seguintes interrogações.
@@ -72,7 +72,7 @@ Implemente as seguintes alíneas sem usar o predicado `format/2`.
 
     ```text
     | ?- print_text("Olá Mundo!", '*', 4).
-    * Olá Mundo *
+    *    Olá Mundo    *
     ```
 
 3. Implemente o predicado `print_banner(+Text, +Symbol, +Padding)` que imprime o texto presente no primeiro argumento (usando aspas) com o formato do exemplo abaixo:
@@ -112,15 +112,15 @@ Implemente as seguintes alíneas sem usar o predicado `format/2`.
 
 9. Implemente o predicado `oh_christmas_tree(+N)` que imprime uma árvore de tamanho N.
 
-```text
-| ?- oh_christmas_tree(5).
-    *
-   ***
-  *****
- *******
-*********
-    *
-```
+    ```text
+    | ?- oh_christmas_tree(5).
+        *
+       ***
+      *****
+     *******
+    *********
+        *
+    ```
 
 ### 5. Relações Familiares Revisitadas
 
@@ -208,6 +208,6 @@ class(rc, tp, '5 Sex', 10.5, 2).
 
 6. Implemente o predicado `schedule/0` que imprime na consola todas as aulas, por ordem de ocorrência na semana.
 
-7. Modifique os predicados anteriores de forma a que o dia da semana seja impresso apenas como seg, ter , qua, qui ou sex. Sugestão: use um predicado de‘tradução’ paraconverter entre o formato de representação interna e o formato de visualização.
+7. Modifique os predicados anteriores de forma a que o dia da semana seja impresso apenas como seg, ter , qua, qui ou sex. Sugestão: use um predicado de'tradução' paraconverter entre o formato de representação interna e o formato de visualização.
 
 8. Implemente o predicado `find_class/0` que pede ao utilizador um dia e hora, e indica se alguma aula inicia ou decorre a essa hora, imprimindo a aula, hora de início e duração.
